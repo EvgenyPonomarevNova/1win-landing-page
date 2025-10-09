@@ -59,7 +59,7 @@
 1. **Клонирование репозитория**
 - git clone https://github.com/your-username/1win-mirror.git
 - cd 1win-mirror
-2. **Запуск проекта
+2. **Запуск проекта**
 # Откройте index.html в браузере
 # Или используйте Live Server
 - npx live-server --port=3000
