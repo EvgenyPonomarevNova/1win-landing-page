@@ -396,7 +396,6 @@ button {
   flex-wrap: wrap;
   margin-top: 30px;
 }
-
 /* responsive */
 @media (max-width: 1200px) {
   .hero-img {
@@ -406,25 +405,30 @@ button {
 }
 
 @media (max-width: 992px) {
-  .nav-desktop {
-    display: none;
+    .bonus-card {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
   }
   .burger {
-    display: flex;
+    display: none;
   }
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
   }
+    .hero-actions {
+    justify-content: center;
+  }
   .hero-img {
     position: relative;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-        max-height: 300px;
-        /* right: 0px; */
-        top: 0px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    /* right: 0px; */
+    top: 0px;
   }
 }
 
@@ -441,20 +445,14 @@ button {
   .hero__subtitle {
     font-size: 1.1rem;
   }
-  .bonus-card {
-    margin: 2rem auto;
-    padding: 1.5rem;
-    text-align: center;
-  }
+
   .bonus-label {
     font-size: 1.2rem;
   }
   .bonus-value {
     font-size: 1.3rem;
   }
-  .hero-actions {
-    justify-content: center;
-  }
+
   .content {
     padding: 40px 0;
   }
@@ -470,6 +468,37 @@ button {
   .footer-bonus-banner {
     padding: 20px;
     margin: 20px auto;
+  }
+    .burger {
+    display: flex;
+  }
+  .nav-desktop {
+    flex-direction: column;
+    display: flex;            /* flex, но свёрнуто */
+    gap: 0rem;
+    z-index: 9999;
+
+    /* ⬇⬇⬇  главное  ⬇⬇⬇ */
+    max-height: 0;            /* свёрнуто */
+    overflow: hidden;         /* прячем */
+    opacity: 0;               /* прозрачно */
+    transition: max-height 1s ease, opacity 0.4s ease, padding 0.6s ease;
+  }
+
+  .nav-desktop.open {
+    max-height: 100px;        /* достаточно высоко */
+    opacity: 1;               /* видно */
+  }
+
+  /* крестик */
+  .burger[aria-expanded="true"] span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .burger[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
 
