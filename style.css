@@ -474,21 +474,24 @@ button {
   }
   .nav-desktop {
     flex-direction: column;
-    display: flex;            /* flex, но свёрнуто */
-    gap: 0rem;
+    gap: 0.5rem;
     z-index: 9999;
 
-    /* ⬇⬇⬇  главное  ⬇⬇⬇ */
-    max-height: 0;            /* свёрнуто */
-    overflow: hidden;         /* прячем */
-    opacity: 0;               /* прозрачно */
-    transition: max-height 1s ease, opacity 0.4s ease, padding 0.6s ease;
+    /* ⬇⬇⬇  НЕ в потоке ⬇⬇⬇  */
+    pointer-events: none;     /* не кликабельно когда прозрачно */
+    opacity: 0;
+    transform: translateY(-10px); /* слегка сверху */
+    transition: opacity 0.4s ease, transform 0.4s ease;
   }
 
   .nav-desktop.open {
-    max-height: 100px;        /* достаточно высоко */
-    opacity: 1;               /* видно */
+    pointer-events: auto;     /* можно кликать */
+    opacity: 1;
+    transform: translateY(0); /* на месте */
   }
+  .nav-link {
+    font-size: 0.8rem;
+}
 
   /* крестик */
   .burger[aria-expanded="true"] span:nth-child(1) {
@@ -556,6 +559,10 @@ button {
   }
   .hero__visual {
     display: none;
+  }
+   .bonus-card, .footer-bonus-banner {
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }
 
