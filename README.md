@@ -1,64 +1,36 @@
-# 1Win Mirror - Рабочее зеркало официального сайта
+# 1win — earlier landing-page exercise
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Responsive](https://img.shields.io/badge/Responsive-Design-2d9af0?style=for-the-badge)
+Earlier HTML/CSS landing-page implementation, retained as a layout sample.
 
-🌐 **Рабочее зеркало 1Win** - современный адаптивный веб-сайт, предоставляющий доступ к официальному зеркалу букмекерской конторы 1Win. Проект разработан с использованием чистого HTML, CSS и JavaScript с полной оптимизацией для всех устройств.
+[Open website preview](https://evgenyponomarevnova.github.io/1win-landing-page/)
 
-## ✨ Особенности
+## About
 
-- 🚀 **Мгновенная загрузка** - один HTML файл без внешних зависимостей
-- 📱 **Полная адаптивность** - идеальное отображение на всех устройствах
-- 🎨 **Современный дизайн** - чистый и интуитивно понятный интерфейс
-- 🔒 **Безопасность** - защищенные подключения и валидация данных
-- ♿ **Доступность** - поддержка screen readers и клавиатурной навигации
-- 🌙 **Темная тема** - комфортная работа при любом освещении
-- ⚡ **Оптимизация** - кросс-браузерная совместимость и быстрая работа
+An earlier frontend exercise focused on a promotional landing-page layout.
 
-## 🛠 Технологии
+## Status and scope
 
-**Frontend:**
-- **HTML5** - семантическая разметка
-- **CSS3** - современные стили с CSS переменными
-- **JavaScript (ES6+)** - интерактивные элементы
-- **CSS Grid & Flexbox** - современные layout системы
+Historical portfolio material. This repository is not maintained as a source of current service links. The SCSS variation is [here](https://github.com/EvgenyPonomarevNova/1win-landing-page-scss).
 
-**Оптимизация:**
-- Lazy Loading изображений
-- CSS-анимации с аппаратным ускорением
-- Минимизированный код
-- Кросс-браузерная совместимость
-- Оптимизация для мобильных устройств
+## Run locally
 
-## 🎯 Основные разделы
+Clone the repository and serve its root with a static HTTP server. For example, with Python installed:
 
-### 🏠 Главная страница
-- Яркий hero-блок с призывом к действию
-- Информация о бонусах и промокодах
-- Быстрый доступ к зеркалу
-- Анимированные элементы интерфейса
+```sh
+git clone https://github.com/EvgenyPonomarevNova/1win-landing-page.git
+cd 1win-landing-page
+python -m http.server 8080
+```
 
-### 📋 Информационные блоки
-- **Особенности зеркала** - технические детали работы
-- **Инструкция по использованию** - пошаговое руководство
-- **FAQ** - ответы на частые вопросы
+Open [localhost:8080](http://localhost:8080). A static server previews HTML/CSS/JavaScript; it does not execute PHP or connect external form services.
 
-### 🎁 Бонусная система
-- Промокод "1WIN2024"
-- Бонус +500% к первому депозиту
-- Интерактивные элементы копирования
-- Визуальное подтверждение действий
+## Repository guide
 
-## 🚀 Быстрый старт
+- `img`
+- `index.html`
+- `script`
+- `style.css`
 
-### Простая установка
+## Author
 
-1. **Клонирование репозитория**
-- git clone https://github.com/your-username/1win-mirror.git
-- cd 1win-mirror
-2. **Запуск проекта**
-# Откройте index.html в браузере
-# Или используйте Live Server
-- npx live-server --port=3000
+[Evgeny Ponomarev](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova) · [Current products and selected work](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova)
