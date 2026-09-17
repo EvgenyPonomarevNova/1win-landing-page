@@ -1,36 +1,29 @@
-# 1win — earlier landing-page exercise
+# 1win — freelance landing page
 
-Earlier HTML/CSS landing-page implementation, retained as a layout sample.
+Freelance landing-page implementation for 1win, built with HTML, CSS and JavaScript.
 
-[Open website preview](https://evgenyponomarevnova.github.io/1win-landing-page/)
+[Website preview](https://evgenyponomarevnova.github.io/1win-landing-page/) · [Project index](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova/blob/main/PROJECTS.md)
 
-## About
+## Project
 
-An earlier frontend exercise focused on a promotional landing-page layout.
-
-## Status and scope
-
-Historical portfolio material. This repository is not maintained as a source of current service links. The SCSS variation is [here](https://github.com/EvgenyPonomarevNova/1win-landing-page-scss).
+A freelance website delivery, retained as part of my client-work portfolio. The implementation uses a static HTML entry point with separate styles and browser scripts.
 
 ## Run locally
 
-Clone the repository and serve its root with a static HTTP server. For example, with Python installed:
+Serve the repository root with a static HTTP server. With Python installed:
 
-```sh
+~~~sh
 git clone https://github.com/EvgenyPonomarevNova/1win-landing-page.git
 cd 1win-landing-page
 python -m http.server 8080
-```
+~~~
 
-Open [localhost:8080](http://localhost:8080). A static server previews HTML/CSS/JavaScript; it does not execute PHP or connect external form services.
+Open http://localhost:8080. No application build step is required for the static preview.
 
-## Repository guide
+## Related implementation
 
-- `img`
-- `index.html`
-- `script`
-- `style.css`
+[SCSS version](https://github.com/EvgenyPonomarevNova/1win-landing-page-scss). Both repositories document versions of the same client work.
 
-## Author
+The repository presents the website implementation. External service links and promotional content belong to the original page and are not maintained as a current service directory.
 
-[Evgeny Ponomarev](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova) · [Current products and selected work](https://github.com/EvgenyPonomarevNova/EvgenyPonomarevNova)
+[Evgeny Ponomarev](https://github.com/EvgenyPonomarevNova)
